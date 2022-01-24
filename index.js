@@ -196,7 +196,7 @@ function addKeys(obj, keys) {
     if (!obj[str] && str!=='') {
       obj[str] = {
         id: str,
-        href: str,
+        href: keys.join('/'),
         short: keys.slice(-1)[0],
         parent: keys.slice(0, (keys.length - 1)).join('_'),
         processed: false,
